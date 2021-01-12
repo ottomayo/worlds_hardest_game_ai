@@ -13,6 +13,7 @@ class Player {
   
   Player() {
     pos = new PVector(90, 150);
+    //pos = new PVector(300, 500);
     vel = new PVector(0, 0);
     acc = new PVector(0, 0);
     

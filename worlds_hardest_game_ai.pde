@@ -19,9 +19,12 @@ void setup() {
 //       the normalArea array. (Fix Level.insideArea()
 //       method).
 
+// TODO: Add moving obstacles.
+
 
 void draw() {
   background(100, 100, 255);
+  strokeWeight(3);
   
   level.draw();
   
@@ -40,15 +43,8 @@ void draw() {
     
   }
   
-  
-  //if(test.dead) {
-  //  println("yes");
-  //}
+
   //test.update();
-  //// test.show();
-  //if(test.dead) {
-  //  println("dead");
-  //  exit();
-  //}
+  //test.show();
   
 }

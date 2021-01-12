@@ -23,6 +23,11 @@ class Population {
     }
     players[0].show();
     
+    
+    fill(255);
+    textSize(15);
+    text("Generation: " + gen, 15, 30);
+    
   }
   
   
@@ -34,6 +39,7 @@ class Population {
       
       players[i].update();
     }
+
   }
   
   
@@ -46,15 +52,11 @@ class Population {
   
   
   boolean allPlayersDead() {
-    println("yep");
     for(int i = 0; i < players.length; i++) {
       if(!players[i].dead && !players[i].reachedGoal) {
-        println("not all dead", "num dead", numberDead());
         return false;
       }
     }
-    
-    println("num dead", numberDead());
 
     return true;
     
